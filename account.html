@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AA FOODS - Account</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="order.html">Order Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Account Management</h1>
+        <section id="login">
+            <h2>Login</h2>
+            <form action="/api/auth/login" method="POST">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <section id="registration">
+            <h2>Register</h2>
+            <form action="/api/auth/register" method="POST">
+                <label for="reg-name">Name:</label>
+                <input type="text" id="reg-name" name="name" required>
+                
+                <label for="reg-email">Email:</label>
+                <input type="email" id="reg-email" name="email" required>
+                
+                <label for="reg-password">Password:</label>
+                <input type="password" id="reg-password" name="password" required>
+                
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <section id="profile">
+            <h2>Your Profile</h2>
+            <p>Manage your account details and view your order history here.</p>
+            <!-- Profile management functionality will be implemented here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 AA FOODS. All rights reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

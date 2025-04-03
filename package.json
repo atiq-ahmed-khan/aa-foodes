@@ -1,0 +1,32 @@
+{
+  "name": "aa-foods",
+  "version": "1.0.0",
+  "description": "An online food delivery website offering a variety of traditional Pakistani foods.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "client": "npm start --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "food",
+    "delivery",
+    "Pakistani",
+    "restaurant",
+    "online"
+  ],
+  "author": "AA FOODS Team",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.6.0",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.10.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
